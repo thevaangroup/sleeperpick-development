@@ -1,14 +1,14 @@
-axis         	= require 'axis'
-rupture      	= require 'rupture'
-autoprefixer 	= require 'autoprefixer-stylus'
+axis         	  = require 'axis'
+rupture      	  = require 'rupture'
+autoprefixer 	  = require 'autoprefixer-stylus'
 css_pipeline  	= require 'css-pipeline'
 js_pipeline   	= require 'js-pipeline'
 browserify    	= require 'roots-browserify'
 babelify      	= require 'babelify'
 image_pipeline	= require 'roots-image-pipeline'
-contentful   	= require 'roots-contentful'
-config       	= require './contentful'
-marked       	= require 'marked'
+#contentful   	= require 'roots-contentful'
+config       	  = require './contentful'
+marked        	= require 'marked'
 
 module.exports =
   ignores: [
@@ -40,7 +40,7 @@ module.exports =
     marked: marked
 
   extensions: [
-  	contentful(config)
+  	#contentful(config)
   	css_pipeline(files: 'assets/css/*.styl')
 
     # temporarily replaced browserify with js_pipeline
