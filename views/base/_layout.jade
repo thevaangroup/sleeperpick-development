@@ -3,41 +3,24 @@ include ../includes/head
 
 body
 
-	// .loader
-	.loader
-		i(class="fa fa-refresh fa-spin")
-	// /.loader
-
-	// begin modal code block
-	include ../includes/modal
-	// end modal code block
-
-	// ================= main start ================ 
-	#main
-		// =============== header =============== 
-		header
-			// .header-inner 
-			.header-inner
-				// .logo-holder
-				.logo-holder
-					a(href="index.html")
-						img(src='../img/TVG_LOGO_NEW_BLACK.svg' alt='')
-				// /.logo-holder
-				// navigation
-				include ../includes/navigation
-				// / navigation
-			// /.header-inner
-
-
-		block theContent
+	block theContent
 
 
 
 
-		// =============== footer ===============
-		include ../includes/footer
-		// =============== / footer ===============
+
+	// =============== footer ===============
+	include ../includes/footer
+	// =============== / footer ===============
 
 
 	// =============== scripts  ===============
 	!= js('/')
+
+
+
+	// jquery
+	script(src="https://code.jquery.com/jquery-1.12.4.js", integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=", crossorigin="anonymous")
+		
+	// boostrap
+	script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")

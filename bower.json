@@ -1,0 +1,18 @@
+{
+  "name": "sleeperpick",
+  "description": "Fantasy the way sports are really played",
+  "main": "",
+  "authors": [
+    "Randy Champagne <r-champagne@neiu.edu>"
+  ],
+  "license": "(GPL-3.0)",
+  "homepage": "https://github.com/thevaangroup/sleeperpick-development",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
