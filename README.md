@@ -2,9 +2,8 @@
 
 # Content Management System
 
-* Status: ✔ In Development
 * Contributors: [@randychampagne](http://twitter.com/randychampagne)
-* Description: This repo holds assets for the Content Management System
+* Description: This repo is the development environment
 * Author: [Randy Champagne](http://www.randychampagne.com)
 * Author URI: [http://www.randychampagne.com](http://www.randychampagne.com)
 * License: GNU General Public License v3.0
@@ -15,9 +14,9 @@
 
 ## About
 
-**[The Vaan Group](http://vaangroup.com/)<br>Brooklyn, NY**
+**[Sleeper Pick]()**
 
-Description Comming Soon
+Fantasy the way sports are really played
 
 
 

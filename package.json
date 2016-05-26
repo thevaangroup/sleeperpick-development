@@ -1,6 +1,6 @@
 {
-  "name": "thevaangroup",
-  "description": "We're a Brooklyn New York based Digital Design Firm",
+  "name": "sleeperpick",
+  "description": "Fantasy the way sports are really played",
   "dependencies": {
     "autoprefixer-stylus": "0.9.x",
     "axis": "0.6.x",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/thevaangroup/cms.git"
+    "url": "https://github.com/thevaangroup/sleeperpick-development.git"
   },
   "license": "(GPL-3.0)"
 }
