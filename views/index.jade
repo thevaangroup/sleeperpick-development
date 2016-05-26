@@ -1,93 +1,13 @@
-//- 
-	ToDo:
-	- decide if it's better to extend _layout here
-
-
-
 //- metadata code block
 include ./includes/head
 
 body
-	// .loader
-	.loader
-		i(class="fa fa-refresh fa-spin")
-	// /.loader
-
-	// begin modal code block
-	include ./includes/modal
-	// end modal code block
-
-	// ================= main start ================ 
-	#main
-		// =============== header =============== 
-		header
-			// .header-inner 
-			.header-inner
-				// .logo-holder
-				.logo-holder
-					a(href="index.html")
-						img(src='img/TVG_LOGO_NEW_BLACK.svg' alt='')
-				// /.logo-holder
-				// navigation
-				include ./includes/navigation
-				// / navigation
-			// /.header-inner
+	
 
 
-		// =============== wrapper =============== 
-		#wrapper
-			// =============== Content holder  =============== 
-			.content-holder.elem.scale-bg2.transition3
-				// .fixed-title
-				.fixed-title
-					span Works
-				// /.fixed-title
-
-				// =============== Content =============== 
-				.content.full-height
-					.resize-carousel-holder
-						#gallery_horizontal.gallery_horizontal
-							
-
-							- for project in contentful.featuredProjects
-								// gallery ttem
-								.horizontal_item
-									.overlay
-									img(src= asset(project.coverImage, { q: 50}))
-									.port-desc-holder
-										.port-desc
-											.grid-item
-												h3
-													a(href="#{project.slug}.html")= project.coverTagLine
-								// / gallery item
-
-
-
-						// customNavigation
-						.customNavigation
-							a(class="next-slide transition")
-								i(class="fa fa-angle-right")
-							a(class="prev-slide transition")
-								i(class="fa fa-angle-left")
-						// /.customNavigation
-				// =============== / Content ===============
-				// Share container
-				.share-container.isShare(data-share="['facebook','pinterest','googleplus','twitter','linkedin']")
-			// =============== / content holder ===============
-		// =============== / wrapper ===============
-		.left-decor
-		.right-decor
-
-		// =============== footer ===============
-		include ./includes/footer
-		// =============== / footer ===============
-
-
-	// =============== scripts  ===============
 	!= js()
 
-	//- slick modals scripts
-		script(type="text/javascript" src="js/jquery.slick-modals.min.js")
+	
 
 
 
