@@ -6,3 +6,7 @@ deploy:
 watch:
 	roots clean
 	roots watch
+
+build:
+	roots clean
+	roots compile
