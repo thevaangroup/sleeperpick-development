@@ -1,0 +1,85 @@
+extends ./_layout
+
+block theContent
+
+
+	// =============== wrapper =============== 
+	#wrapper
+		// =============== Content holder  ===============
+		.content-holder.elem.scale-bg2.transition3
+			// .fixed-title
+			.fixed-title
+				span= entry.navBarLabel
+			// =============== Content  ===============
+			.content.full-height
+				// =============== description column  ===============-->
+				.fixed-info-container
+					h3= entry.clientName
+					.separator
+					.clearfix
+					!= marked(entry.description)
+					if entry.cilentUrl && entry.clientUrlLabel
+						p View site: 
+							a(href= entry.cilentUrl target='_blank')= entry.clientUrlLabel
+					h4 Info
+
+					//- This logic handles the inter-project navigation
+					- var selArr = []
+					- for project in contentful.selectedWorks
+						- selArr.push(project._url)
+
+					//- set curUrl
+					- var curUrl = entry._url
+					
+					//- fetch prevUrl
+					- var prevUrl = (selArr.indexOf(curUrl) === 0) ? selArr[selArr.length-1] : selArr[selArr.indexOf(curUrl) - 1];
+
+					//- fetch nextUrl
+					- var nextUrl = (selArr.indexOf(curUrl) < selArr.length - 1) ? selArr[selArr.indexOf(curUrl) + 1] : selArr[0];
+
+					//- log results
+						- console.log('selArr is:\n',selArr)
+						- console.log('Previous url is: ', prevUrl)
+						- console.log('Current url is: ', curUrl)
+						- console.log('Next url is: ', nextUrl)
+				
+					.content-nav
+						ul
+							li
+								a(href="#{prevUrl}")
+									i.fa.fa-long-arrow-left
+							li
+								span &#47;
+							li
+								a(href="#{nextUrl}")
+									i.fa.fa-long-arrow-right
+						.p-all
+							a(href="index.html")
+								i.fa.fa-th-large
+				// description column end
+				// portfolio  Images
+				.resize-carousel-holder.vis-info
+					.swiper-container.viom#horizontal-slider(data-mwc="1" data-mwa="0")
+						.swiper-wrapper
+							// =============== 1 ===============
+							.swiper-slide
+								.bg.bg-slider(style="background-image:url(#{asset(entry.backgroundImage, { q: 50})})")
+								.zoomimage
+									img.intense(src= asset(entry.backgroundImage, { q: 50}) alt="")
+									i.fa.fa-expand
+							// 1 end
+						.pagination
+					// slider navigation
+					.swiper-nav-holder.hor.hs
+						a.swiper-nav.arrow-left.transition(href="#")
+							i.fa.fa-angle-left
+						a.swiper-nav.arrow-right.transition(href="#")
+							i.fa.fa-angle-right
+					// slider navigation  end
+			// Content end
+			// Share container
+			.share-container.isShare(data-share="['facebook','pinterest','googleplus','twitter','linkedin']")
+		// content holder end
+	// wrapper end
+	.left-decor
+	.right-decor

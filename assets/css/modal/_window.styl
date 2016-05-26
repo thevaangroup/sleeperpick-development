@@ -1,0 +1,102 @@
+@import "_base.styl"
+@import "_functions.styl"
+
+// globals
+win-width	= 405px
+win-height 	= 834px
+font-size	= 1.4em
+
+
+
+.window
+	display 			block
+	margin-top			auto
+	margin-bottom		auto
+	padding 			0 getRespVal(18,win-width)
+	width 				getRespVal(win-width,vp-width)
+	height 				getRespVal(win-height,vp-height)
+	border-radius 		5px
+	background-color 	#ffffff
+	box-shadow 			5px 5px 10px 0 rgba(0, 0, 0, 0.5)
+
+
+.logo-container
+	display 			block
+	padding-top 		getRespVal(49,win-height)
+	
+
+.logo
+	display 			block
+	margin 				0 auto
+	width 				60px //getRespVal(60,win-width)
+	height 				70px //getRespVal(70,win-height)
+	
+
+.header
+	//display 			block
+	margin				0 auto
+	//padding 			getRespVal(36,win-height) auto 0 auto
+	padding-top 		getRespVal(36,win-height)
+	width 				getRespVal(371,win-width)
+	height 				getRespVal(28,win-height)
+	font-size 			font-size
+	text-align 			center
+	color 				#333333
+	
+
+.window-separator
+	display 			block
+	margin 				getRespVal(108,win-height) auto 
+	padding 			0
+	border 				solid 1px #979797
+	width 				getRespVal(353,win-width)
+	height 				getRespVal(3,win-height)
+
+	
+
+.window-body
+	display 			block
+	margin				0 auto
+	//padding-bottom 	getRespVal(65,win-height)
+	width 				getRespVal(360,win-width)
+	height 				getRespVal(150,win-height)
+	font-size 			font-size * .9
+	text-align 			center
+	color 				#333333
+
+	
+
+.window-services
+	display				block
+	margin				getRespVal(-50,win-height) auto 0 auto
+	padding-bottom		getRespVal(60,win-height)
+	text-align			center
+
+	
+
+.window-services li
+	font-size			font-size * .85
+	line-height			font-size * 1.5
+
+	
+
+.modal-button
+	display				block
+	margin				getRespVal(50,win-height) auto 0 auto
+	padding-top			getRespVal(30,win-height)
+	width 				getRespVal(346,win-width)
+	height 				getRespVal(78,win-height)
+	background-color 	#e7e7e7
+	text-align			center
+	font-size			font-size * 1.1
+
+
+
+
+
+
+
+
+
+
+
