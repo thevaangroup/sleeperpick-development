@@ -25,7 +25,7 @@ block theContent
 							li THE APP
 					.col-sm-2
 						a.btn.btn-warning(href="#" target="_blank")
-							img(src="img/apple-logo.svg")
+							i.fa.fa-apple(aria-hidden="true")
 							span APP COMING SOON!
 
 
@@ -65,37 +65,74 @@ block theContent
 
 
 			// body
-			section
+			section#cards
+
 				// arrow-black-down
 				.row
-					.col-sm-2.col-sm-offset-7
+					//-.col-md-2.col-md-offset-7
+					.hidden-xs.hidden-sm.col-md-2.col-md-offset-7
 						#arrow-down
 							img(src="img/arrow-black-down.png")
+				
+
 				// cards
 				.row
 					// card 1
-					.col-sm-3.col-sm-offset-1
+					//- SM views
+					.hidden-xs.col-sm-10.col-sm-offset-1.hidden-md.hidden-lg
 						.card
+
+					//- MD + views
+					.hidden-xs.hidden-sm.col-md-3.col-md-offset-1
+						.card
+
+
 					// card 2
-					.col-sm-4
-						.row
-							.col-sm-12
-								.row
-									
-									.col-sm-10.col-sm-offset-1
-										.card
-					// card 3
-					.col-sm-3
+					//- SM view
+					.hidden-xs.col-sm-10.col-sm-offset-1.hidden-md.hidden-lg
 						.card
+
+					//- MD + views
+					.hidden-xs.hidden-sm.col-md-4
+						.row
+							.col-md-12
+								.row
+									.col-md-10.col-md-offset-1
+										.card
+
+
+					// card 3
+					//- SM views
+					.hidden-xs.col-sm-10.col-sm-offset-1.hidden-md.hidden-lg
+						.card
+
+					//- MD + views
+					.hidden-xs.hidden-sm.col-md-3
+						.card
+
+
+
+
 				// arrot-black-up
 				.row
-					.col-sm-2.col-sm-offset-3
+					.hidden-xs.hidden-sm.col-md-2.col-md-offset-3
 						#arrow-up
 							img(src="img/arrow-black-up.png")
+
+			
+			// header 2
+			header#scoring
+				
+				.row
+					.col-sm-2.col-sm-offset-5.text-center.
+						SCORING
+
+			// section 2
+			section
 				// panel
 				.row
 					.col-sm-10.col-sm-offset-1
-						#well
+						#pannel
 
 
 
