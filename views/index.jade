@@ -45,183 +45,227 @@ block theContent
 		// section.bottom
 		section.bottom
 			
-			// header
-			header
-				.row
-					.col-sm-2.col-sm-offset-5.text-center
-						h1 HOW IT WORKS
+			// game-desc
+			#game-desc
+
+				// header
+				header
+					.row
+						.col-sm-2.col-sm-offset-5.text-center
+							h1 HOW IT WORKS
 
 
-			// body
-			section#cards
+				// body
+				section#cards
 
-				// arrow-black-down
-				.row
-					//- MD + views
-					.hidden-xs.hidden-sm.col-md-2.col-md-offset-7
-						#arrow-down
-							img(src="img/arrow-black-down.png")
-				
+					// arrow-black-down
+					.row
+						//- MD + views
+						.hidden-xs.hidden-sm.col-md-2.col-md-offset-7
+							#arrow-down
+								img(src="img/arrow-black-down.png")
+					
 
-				// cards block
-				.row
-					// card 1
-					//- XS & SM views
-					.col-xs-10.col-xs-offset-1.hidden-md.hidden-lg
-						.card
-							//- icons
-							.row
-								.col-xs-5.col-xs-offset-1
-									//- football
-									img(src="img/Football.png")
-							.row
-								.col-xs-5.col-xs-offset-6
-									//- stopwatch
-									img(src="img/Stopwatch.png")
-								.col-xs-5.col-xs-offset-1
-									//- basketball
-									img(src="img/Basketball.png")
-
-							//- copy
-							.row
-								.col-xs-10.col-xs-offset-1.text-center
-									h2 CREATE A POOL
-									p Choose the time interval and the sports. Invite your friends
-
-					//- MD + views
-					.hidden-xs.hidden-sm.col-md-3.col-md-offset-1
-						.card
-							//- icons
-							.row
-								.col-xs-5.col-xs-offset-1
-									//- football
-									img(src="img/Football.png")
-							.row
-								.col-xs-5.col-xs-offset-6
-									//- stopwatch
-									img(src="img/Stopwatch.png")
-								.col-xs-5.col-xs-offset-1
-									//- basketball
-									img(src="img/Basketball.png")
-
-							//- copy
-							.row
-								.col-xs-10.col-xs-offset-1.text-center
-									h2 CREATE A POOL
-									p Choose the time interval and the sports. Invite your friends
-					// end card 1
-
-
-					// arrow-black-right
-					//- SM view
-					.hidden-xs.col-sm-1.col-sm-offset-2.hidden-md.hidden-lg
-						#arrow-right
-							img(src="img/arrow-black-up.png")
-
-
-					// card 2
-					//- XS & SM view
-					.col-xs-10.col-xs-offset-1.hidden-md.hidden-lg
-						.card
-							//- icons
-							.row
-								.col-xs-2.col-xs-offset-4
-									//- Trophy
-									img(src="img/Trophy.png")
-
-							//- copy
-							.row
-								.col-xs-10.col-xs-offset-1.text-center
-									h2 PICK THE WINNERS
-									p You’ll get extra points for picking the best underdogs
-
-					//- MD + views
-					.hidden-xs.hidden-sm.col-md-4
-						.row
-							.col-md-12
+					// cards block
+					.row
+						// card 1
+						//- XS & SM views
+						.col-xs-10.col-xs-offset-1.hidden-md.hidden-lg
+							.card
+								//- icons
 								.row
-									.col-md-10.col-md-offset-1
-										.card
-											//- icons
-											.row
-												.col-xs-2.col-xs-offset-4
-													//- Trophy
-													img(src="img/Trophy.png")
+									.col-xs-5.col-xs-offset-1
+										//- football
+										img(src="img/Football.png")
+								.row
+									.col-xs-5.col-xs-offset-6
+										//- stopwatch
+										img(src="img/Stopwatch.png")
+									.col-xs-5.col-xs-offset-1
+										//- basketball
+										img(src="img/Basketball.png")
 
-											//- copy
-											.row
-												.col-xs-10.col-xs-offset-1.text-center
-													h2 PICK THE WINNERS
-													p You’ll get extra points for picking the best underdogs
+								//- copy
+								.row
+									.col-xs-10.col-xs-offset-1.text-center
+										h2 CREATE A POOL
+										p Choose the time interval and the sports. Invite your friends
+
+						//- MD + views
+						.hidden-xs.hidden-sm.col-md-3.col-md-offset-1
+							.card
+								//- icons
+								.row
+									.col-xs-5.col-xs-offset-1
+										//- football
+										img(src="img/Football.png")
+								.row
+									.col-xs-5.col-xs-offset-6
+										//- stopwatch
+										img(src="img/Stopwatch.png")
+									.col-xs-5.col-xs-offset-1
+										//- basketball
+										img(src="img/Basketball.png")
+
+								//- copy
+								.row
+									.col-xs-10.col-xs-offset-1.text-center
+										h2 CREATE A POOL
+										p Choose the time interval and the sports. Invite your friends
+						// end card 1
 
 
-					// arrow-black-left
-					//- SM view
-					.hidden-xs.col-sm-1.col-sm-offset-8.hidden-md.hidden-lg
-						#arrow-left
-							img(src="img/arrow-black-down.png")
+						// arrow-black-right
+						//- SM view
+						.hidden-xs.col-sm-1.col-sm-offset-2.hidden-md.hidden-lg
+							#arrow-right
+								img(src="img/arrow-black-up.png")
 
 
-					// card 3
-					//- XS & SM views
-					.col-xs-10.col-xs-offset-1.hidden-md.hidden-lg
-						.card
-							//- icons
+						// card 2
+						//- XS & SM view
+						.col-xs-10.col-xs-offset-1.hidden-md.hidden-lg
+							.card
+								//- icons
+								.row
+									.col-xs-2.col-xs-offset-3
+										//- Trophy
+										img(src="img/Trophy.png")
+
+								//- copy
+								.row
+									.col-xs-10.col-xs-offset-1.text-center
+										h2 PICK THE WINNERS
+										p You’ll get extra points for picking the best underdogs
+
+						//- MD + views
+						.hidden-xs.hidden-sm.col-md-4
 							.row
-								.col-xs-2.col-xs-offset-4
-									//- MVP-seal
-									img(src="img/MVP-seal.png")
+								.col-md-12
+									.row
+										.col-md-10.col-md-offset-1
+											.card
+												//- icons
+												.row
+													.col-xs-2.col-xs-offset-4
+														//- Trophy
+														img(src="img/Trophy.png")
 
-							//- copy
-							.row
-								.col-xs-10.col-xs-offset-1.text-center
-									h2 BE THE MVP
-									p Dominate your friends. Showcase your sports knowledge.
-
-					//- MD + views
-					.hidden-xs.hidden-sm.col-md-3
-						.card
-							//- icons
-							.row
-								.col-xs-2.col-xs-offset-4
-									//- MVP-seal
-									img(src="img/MVP-seal.png")
-
-							//- copy
-							.row
-								.col-xs-10.col-xs-offset-1.text-center
-									h2 BE THE MVP
-									p Dominate your friends. Showcase your sports knowledge.
+												//- copy
+												.row
+													.col-xs-10.col-xs-offset-1.text-center
+														h2 PICK THE WINNERS
+														p You’ll get extra points for picking the best underdogs
 
 
+						// arrow-black-left
+						//- SM view
+						.hidden-xs.col-sm-1.col-sm-offset-8.hidden-md.hidden-lg
+							#arrow-left
+								img(src="img/arrow-black-down.png")
 
 
-				// arrot-black-up
-				.row
-					.hidden-xs.hidden-sm.col-md-2.col-md-offset-3
-						#arrow-up
-							img(src="img/arrow-black-up.png")
+						// card 3
+						//- XS & SM views
+						.col-xs-10.col-xs-offset-1.hidden-md.hidden-lg
+							.card
+								//- icons
+								.row
+									.col-xs-2.col-xs-offset-3
+										//- MVP-seal
+										img(src="img/MVP-seal.png")
 
-				// end cards block
+								//- copy
+								.row
+									.col-xs-10.col-xs-offset-1.text-center
+										h2 BE THE MVP
+										p Dominate your friends. Showcase your sports knowledge.
 
+						//- MD + views
+						.hidden-xs.hidden-sm.col-md-3
+							.card
+								//- icons
+								.row
+									.col-xs-2.col-xs-offset-4
+										//- MVP-seal
+										img(src="img/MVP-seal.png")
+
+								//- copy
+								.row
+									.col-xs-10.col-xs-offset-1.text-center
+										h2 BE THE MVP
+										p Dominate your friends. Showcase your sports knowledge.
+
+
+
+
+					// arrot-black-up
+					.row
+						.hidden-xs.hidden-sm.col-md-2.col-md-offset-3
+							#arrow-up
+								img(src="img/arrow-black-up.png")
+					// end cards block
+			// end game-desc
 			
-			// header 2
-			header#scoring
-				
-				.row
-					.col-sm-2.col-sm-offset-5.text-center
-						h1 SCORING
-
-			// section 2
-			section
-				// panel
-				.row
-					.col-sm-10.col-sm-offset-1
-						#pannel
 
 
+			// scoring-desc
+			#scoring-desc
+
+				// header 2
+				header#scoring
+					
+					.row
+						.col-sm-2.col-sm-offset-5.text-center
+							h1 SCORING
+
+				// section 2
+				section
+					// panel
+					.row
+						.col-sm-10.col-sm-offset-1
+							#pannel
+								.row
+									//- favorites
+									.col-xs-10-.col-xs-offset-1.col-sm-5
+										.row
+											//- icon
+											.col-xs-9.col-xs-offset-3.col-md-2.col-md-offset-1
+												img(src="img/FAVORITE-ICON.png")
+											//- copy
+											.col-xs-12.col-md-6.col-md-offset-3
+												h2 Favorites. They’re worth 1 points.
+									//- underdogs
+									.col-xs-10-.col-xs-offset-1.col-sm-5
+											//- icon
+											.col-xs-9.col-xs-offset-3.col-md-2.col-md-offset-1
+												img(src="img/UNDERDOG-ICON.png")
+											//- copy
+											.col-xs-12.col-md-8.col-md-offset-2
+												h2 Underdogs. They’re worth 1.5 points.
+								.row
+									//- Cinderellas
+									.col-xs-10-.col-xs-offset-1.col-sm-5
+											//- icon
+											.col-xs-9.col-xs-offset-3.col-md-2.col-md-offset-1
+												img(src="img/SLIPPER-ICON.png")
+											//- copy
+											.col-xs-12.col-md-8.col-md-offset-2
+												h2 Cinderellas. They’re worth 3.5 points.
+									//- Sleepers
+									.col-xs-10-.col-xs-offset-1.col-sm-5
+											//- icon
+											.col-xs-9.col-xs-offset-3.col-md-2.col-md-offset-1
+												img(src="img/SLEEPER-ICON.png")
+											//- copy
+											.col-xs-12.col-md-8.col-md-offset-2
+												h2 Sleepers. They’re worth 2.5 points.
 
 
+
+
+
+			// end scoring-desc
 		// end section.bottom
 
 
