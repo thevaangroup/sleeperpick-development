@@ -10,16 +10,32 @@ block theContent
 			// marketing
 			section
 				.row
-					.col-sm-5.col-sm-offset-1
+					.col-sm-4.col-sm-offset-1
 						.marketing
-							h1.
-								Fantasy the way sports are really played
-							h2.
-								Create tournaments. Pick teams. Dominate friends. 
-							p.
-								SleeperPick let’s you create daily pick’em pools. Points are awarded for underdogs.Get in the game!
-					.hidden-xs.col-sm-5
+							.row
+								.col-xs-12
+									h1.
+										Fantasy the way sports are really played
+							.row
+								.col-xs-12
+									h2.
+										Create tournaments. Pick teams. Dominate friends. 
+							.row
+								.col-xs-12
+									p.
+										SleeperPick let’s you create daily pick’em pools. Points are awarded for underdogs.Get in the game!
+							.row
+								.col-xs-3#input-row
+									.input-group
+										input.form-control(type="text" placeholder="Enter your mail" aria-describedby="email")
+										span.input-group-addon SIGN UP
+							.row
+								.col-xs-3.col-xs-offset-3
+									img(src="img/signup-arrow-group.png")
+							
+					.hidden-xs.col-sm-5.col-sm-offset-1
 						img.mobile-mock(src="img/mobile-mock-sliced.png")
+
 			// end marketing
 		// end section.top
 
