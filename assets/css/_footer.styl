@@ -24,19 +24,39 @@ footer h3
 	
 
 
+// XS views only
 @media only screen and (max-width: 767px)
 	footer
 		padding-top 	20px
 		
 
 	.social
-		padding-top 	15px		
+		padding-top 	15px	
 		
 
+	.text-right ul, .copyright
+		text-align		left !important
+		padding-left	15px
+			
 
+// SM views
 @media only screen and (min-width: 768px)
 	.social ul
 		padding-left	25px
+
+
+	.copyright
+		padding-left	80px
+			
+
+// MD + views
+@media only screen and (min-width: 992px)
+	.social ul
+		padding-left	25px
+
+
+	.copyright
+		padding-left	125px
 
 
 
