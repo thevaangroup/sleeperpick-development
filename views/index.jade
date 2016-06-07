@@ -25,16 +25,13 @@ block theContent
 									p.
 										SleeperPick let’s you create daily pick’em pools. Points are awarded for underdogs. Get in the game!
 							.row
-								//- XS views
-								.col-xs-3.hidden-sm.hidden-md.hidden-lg#input-row
-									.input-group
-										input.form-control(type="text" placeholder="Enter your mail" aria-describedby="email")
-										span.input-group-addon SIGN UP
-								//- SM + views
-								.hidden-xs.col-xs-3#input-row
-									.input-group
-										input.form-control(type="text" placeholder="Enter your mail" aria-describedby="email")
-										span.input-group-addon SIGN UP
+								//- XS + views
+								.col-xs-3#input-row
+									//-form(action="https://formspree.io/app.vaangroup@gmail.com" method="POST")
+									form(action="https://formspree.io/sleeperpick@outlook.com" method="POST")
+										.input-group
+											input.form-control(type="text" name="email" placeholder="Enter your mail" aria-describedby="email")
+											input(type="submit" value="SIGN UP").submit
 							.row
 								.col-xs-3.col-xs-offset-1.col-sm-3.col-sm-offset-3
 									img.signup-arrow(src="img/signup-arrow-group.png")
